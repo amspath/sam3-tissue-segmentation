@@ -1,5 +1,6 @@
-import uvicorn
-from viewer import app
+"""Convenience entry point — run with `python main.py` during development."""
+
+from viewer.cli import main
 
 if __name__ == "__main__":
-    uvicorn.run(app, host="localhost", port=8000, log_level="info")
+    main()
