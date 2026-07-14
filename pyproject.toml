@@ -4,4 +4,20 @@ version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.13"
-dependencies = []
+dependencies = [
+    "fastslide>=0.7.5",
+    "huggingface-hub>=1.23.0",
+    "pillow>=11.0.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project.scripts]
+wsi-thumb = "wsi_thumb:main"
+sam3-segment = "sam3_segment:main"
+
+[tool.hatch.build.targets.wheel]
+sources = ["src"]
+include = ["src/wsi_thumb.py", "src/sam3_segment.py"]
