@@ -1,1 +1,0 @@
-# ai-assisted-wsi-labeling

@@ -1,6 +1,6 @@
-"""Convenience entry point — run with `python main.py` during development."""
+def main():
+    print("Hello from ai-assisted-wsi-labeling!")
 
-from viewer.cli import main
 
 if __name__ == "__main__":
     main()
